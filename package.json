@@ -4,12 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint ./pages/**/*.js --fix"
+    "lint": "eslint ./pages/**/*.js --fix && yarn solhint ./ethereum/contracts/**/*.sol --version 0.5.0"
   },
   "dependencies": {
     "next": "^7.0.2",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "web3": "^1.0.0-beta.37"
   },
   "devDependencies": {
     "eslint": "^5.12.1",
@@ -21,6 +22,7 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-standard": "^4.0.0",
-    "prettier": "^1.15.3"
+    "prettier": "^1.15.3",
+    "solhint": "^1.5.0"
   }
 }
