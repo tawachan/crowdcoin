@@ -4,6 +4,10 @@
     "avoid-throw": false,
     "avoid-suicide": "error",
     "avoid-sha3": "warn",
-    "indent": ["warn", 4]
+    "indent": 2,
+    "var-name-mixedcase": false,
+    "separate-by-one-line-in-contract": false,
+    "state-visibility": false,
+    "compiler-fixed": false
   }
 }
