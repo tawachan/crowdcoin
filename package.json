@@ -8,7 +8,9 @@
     "build": "next build",
     "start": "next start",
     "test": "yarn truffle test",
-    "lint": "eslint ./pages/**/*.js --fix && yarn solhint ./ethereum/contracts/**/*.sol --version 0.5.0",
+    "eslint": "eslint ./pages/**/*.js --fix",
+    "sollint": "yarn solhint ./ethereum/contracts/**/*.sol --version 0.5.0",
+    "lint": "yarn eslint && yarn sollint",
     "contract:compile": "yarn truffle compile",
     "contract:migrate": "yarn truffle migrate"
   },
