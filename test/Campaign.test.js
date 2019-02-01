@@ -14,6 +14,7 @@ contract("CampaignFactory", accounts => {
   it("can create a campaign with factory", async () => {
     await factory.createCampaign(100, { from: accounts[0] });
     const deployedCampaigns = await factory.getDeployedCampaigns();
+    console.log(deployedCampaigns);
     assert.ok(deployedCampaigns[0]);
   });
 });
